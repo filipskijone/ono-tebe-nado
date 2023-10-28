@@ -10,32 +10,30 @@
     <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
-  <main>
     <header class="header" id="own">
       <nav class="header_menu">
         <ul class="header_links-list">
           <li class="header_links-list_item header_link-active">
-            <a class="footer_menu-link-active" href="#own">главная</a>
+            <a class="menu-link-active" href="#own">главная</a>
           </li>
-          <li  class="header_links-list_item header_link">
-            <a href="#lots">посмотреть лоты</a>
+          <li  class="header_links-list_item">
+            <a class="header-link" href="#lots">посмотреть лоты</a>
         </li>
-          <li class="header_links-list_item header_link">
-            <a href="#about">об аукционе</a>
+          <li class="header_links-list_item">
+            <a class="header-link" href="#about">об аукционе</a>
           </li>
         </ul>
       </nav>
-      <div class="header_logo">
-        <a href=""><img  class="header_logo-image"
+        <a href=""><img  class="header_logo-image header_logo"
               src="./images/logo-black.svg"
               alt="Логотип сайта"></a>
-        </div>
-      <div class="header_adress">
+      <address class="header_adress">
         <a href="tel:+70000000">+9 999 555 5555</a><br>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
-        <address class="header_address-ad">наб. Принсенграхт 263-265,<br> Амстердам</address>
-      </div>
+        <p class="header_address-ad">наб. Принсенграхт 263-265,<br> Амстердам</p>
+      </address>
     </header>
+    <main>
     <section class="cover">
       <div class="overlay"></div>
         <h1 class="cover_title">
@@ -43,20 +41,20 @@
             <span class="title_text text_center spacing">теб<span class="accent_span">е</span></span>
             <span class="title_text text_right spacing">н<span class="accent_span">ад</span><span class="no_spacing">о</span></span>
         </h1>
-        <section class="cover_description">
-          <div class="cover_desc-text">Аукцион    вещей,    в    которые    никто    не     верил </div>
+        <div class="cover_description">
+          <p class="cover_desc-text">Аукцион    вещей,    в    которые    никто    не     верил </p>
           <button class="cover_bottom">Сделать ставку</button>
-        </section>
+        </div>
     
     </section>
     <section class="lots" id="lots">
-      <h1 class="lots_heading">Лоты</h1>
+      <h2 class="lots_heading">Лоты</h2>
       <ul class="lots_card-list">
         <li class="lots_card-list-item">
           <a class="card-link" href="">
             <article class="card card_type_film">
               <div class="overlay"></div>
-              <p class="card_title">Фильм режиссёра, который  бросил киношколу</p>
+              <h2 class="card_title">Фильм режиссёра, который  бросил киношколу</h2>
               <p class="card_text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
             </article>
           </a>
@@ -88,25 +86,27 @@
         <div class="about_logo-image">
           <img src="./images/logo-white.svg" 
                class="about_logo-image_white"
-               title="Логотип">
+               alt="Логотип">
         </div>
       </div>
       <div class="about_column">
         <h2 class="about_title">Об аукционе</h2>
-        <p class="about_text about_otstup">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+        <div class="about_column-text"><p class="about_text">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
         <p class="about_text">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>
+        </div>
       </div>
     </section>
+  </main>
     <footer class="footer">
-      <div class="footer_address">
+      <address class="footer_address">
         <a href="tel:+70000000">+9 999 555 5555</a><br>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
-        <address class="header_address-ad">наб. Принсенграхт 263-265,<br> Амстердам</address>
-      </div>
+        <p class="header_address-ad">наб. Принсенграхт 263-265,<br> Амстердам</p>
+      </address>
       <nav class="footer_menu">
         <ul class="footer_menu-list">
           <li class="footer_menu-list-item">
-            <a class="footer_menu-link-active" href="#own">главная</a>
+            <a class="footer_menu-link menu-link-active" href="#own">главная</a>
           </li>
           <li class="footer_menu-list-item">
             <a class="footer_menu-link" href="#lots">посмотреть лоты</a>
@@ -116,7 +116,6 @@
           </li>
         </ul>
       </nav>
-      <div>
           <ul class="footer_social-list">
             <li class="footer_social-list-item">
               <a class="footer_social-link" href="https://www.youtube.com">
@@ -140,8 +139,6 @@
               </a>
             </li>
           </ul>
-      </div>
-   </footer>
-  </main>
+      </footer>
   </body>
 </html>
